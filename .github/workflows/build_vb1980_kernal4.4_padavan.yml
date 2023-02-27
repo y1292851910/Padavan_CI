@@ -209,11 +209,10 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=${{env.vpncli}}" >> .config #SOFTETHERVPN
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD=${{env.vpncmd}}" >> .config #SOFTETHERVPN
         #科学相关
-        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=${{env.ss}}=n" >> .config #SS plus+
-        echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=${{env.v2ray}}=n" >> .config #集成v2ray执行文件（3.8M左右)
-        echo "CONFIG_FIRMWARE_INCLUDE_XRAY=${{env.xray}}=n" >> .config #集成xray执行文件(5.6M左右)，可以代替v2ray，注：如果闪存太小不够还是建议使用v2ray
-        echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=${{env.trojan}}=n" >> .config #集成trojan执行文件(1.1M左右)
-        echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=${{env.ssobfs}}=n" >> .config # simple-obfs混淆插件
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=${{env.ss}}" >> .config #SS plus+
+        echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=${{env.v2ray}}" >> .config #集成v2ray执行文件（3.8M左右)
+        echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=${{env.trojan}}" >> .config #集成trojan执行文件(1.1M左右)
+        echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=${{env.ssobfs}}" >> .config # simple-obfs混淆插件
         echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config #SS server
         #
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config #可以不集成
